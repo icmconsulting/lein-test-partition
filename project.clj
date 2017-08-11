@@ -1,4 +1,4 @@
-(defproject lein-test-partition "1.0.1"
+(defproject lein-test-partition "1.0.1-SNAPSHOT"
   :description "Partition your clojure.test test suite across multiple JVMs."
   :url "https://github.com/icmconsulting/lein-test-partition"
   :license {:name "Eclipse Public License"
@@ -8,7 +8,7 @@
   :release-tasks [["vcs" "assert-committed"]
                   ["change" "version" "leiningen.release/bump-version" "release"]
                   ["vcs" "commit"]
-                  ["vcs" "tag"]
+                  ["vcs" "tag" "--no-sign"]
                   ["deploy" "clojars"]
                   ["change" "version" "leiningen.release/bump-version" "patch"]
                   ["vcs" "commit"]
