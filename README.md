@@ -10,7 +10,7 @@ Most CI tools support [parallelisation](https://jenkins.io/doc/pipeline/examples
 
 ## Usage
 
-Put `[lein-test-partition "1.0.0"]` into the `:plugins` vector of your project.clj.
+Put [![Clojars Project](https://img.shields.io/clojars/v/lein-test-partition.svg)](https://clojars.org/lein-test-partition) into the `:plugins` vector of your project.clj.
 
 When running tests using `lein-test-partition`, specify the total number of partitions, and the partition number to execute.
 Note: you would use this instead of your regular test runner command (e.g. `lein test`) 
